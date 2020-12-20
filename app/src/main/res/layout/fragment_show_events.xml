@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Выберете действие"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/btnShowDetailsEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Информация о фильме"
+            android:layout_marginBottom="20dp"
+
+            style="@style/button_style"/>
+
+        <Button
+            android:id="@+id/btnShowSelectedEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Классные фильмы"
+            android:layout_marginBottom="20dp"
+            style="@style/button_style" />
+
+
+
+        <Button
+            android:id="@+id/btnExtentFindEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Расширенный поиск"
+            style="@style/button_style"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
